@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    font-family: Arial;
+    border: border-box;    /* control how the width and height of an element are calculated.The width and height of the element include the content, padding, and border. */
+}
+
+
+.navbar {
+    height: 65px;
+    background-color: #0F1111;
+    color: #FFFFFF;
+}
+
+.nav-logo {
+    height: 53px;
+    width: 110px;
+    padding: 4px;
+}
+
+.logo {
+    background-image: url("../assets/amazon_logo.png");
+    background-size: cover;
+    width: 100%;
+    height: 50px;
+}
