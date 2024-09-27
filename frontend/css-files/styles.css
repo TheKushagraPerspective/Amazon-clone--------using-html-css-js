@@ -180,3 +180,51 @@
 
 
 /* - - - - -  End of navbar  - - - - -  */
+
+
+/* - - - - -  start of panel - - - - - */
+.panel {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 40px;
+    background-color: #232f3e;
+    color: #FFFFFF;
+    padding-left: 10px;
+    padding-right:10px;
+}
+
+.panel-all {
+    display: flex;
+    width: 5%;
+    padding: 8px 9px;
+}
+
+.panel-all i{ 
+    margin-right: 5px;
+}
+
+.panel-text-1 {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.panel-options p{ 
+    display: inline;
+    margin-left: 15px;
+    font-size: 0.9rem;
+    padding: 8px 9px;
+}
+
+.panel-options {
+    /* we can use this also in place of display:inline */
+    /* display: flex; */
+    /* align-items: center; */
+    width: 75%;
+}
+
+.panel-deal {
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 8px 9px;
+}
