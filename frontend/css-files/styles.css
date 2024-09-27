@@ -1,14 +1,34 @@
 * {
     margin: 0;
     font-family: Arial;
-    border: border-box;    /* control how the width and height of an element are calculated.The width and height of the element include the content, padding, and border. */
+    box-sizing: border-box; /* Corrected */    /* control how the width and height of an element are calculated.The width and height of the element include the content, padding, and border. */
 }
 
+
+
+.border {
+    border: 1px solid transparent;
+}
+
+.border:hover {
+    border: 1px solid white;
+}
+
+/* above classes are used in multiple places so placed at the top */
+
+
+
+
+
+/* - - - - -  Start of navbar  - - - - -  */
 
 .navbar {
     height: 65px;
     background-color: #0F1111;
     color: #FFFFFF;
+    display: flex;
+    align-items: center;      /* center the items in top to bottom graph */
+    justify-content: space-evenly;
 }
 
 .nav-logo {
@@ -23,3 +43,140 @@
     width: 100%;
     height: 50px;
 }
+
+
+/* box - 2 */
+.nav-address {
+    padding: 8px;           /* to increase the box size */
+}
+
+.add-icon {
+    display: flex;
+}
+
+.add-first {
+    color: #CCCCCC;
+    font-size: 0.85rem;
+    margin-left: 15px;
+}
+
+.add-second {
+    color: #FFFFFF;
+    font-size: 1rem;
+    margin-left: 3px;
+}
+
+
+
+/* box 3 */
+.nav-search {
+    margin-left: 5px;
+    display: flex;
+    justify-content: center;
+    width: 820px !important;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.search-select {
+    width: 50px;
+    padding: 5px;
+    background-color: #f3f3f3;
+    text-align: center;
+    border: none;
+}
+
+.search-input {
+    border: none;
+    width: 100%;     /* 100% means it will take all width that will left after setting icon and all select button */
+    padding: 5px;
+    font-size: 1rem;
+}
+
+.search-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    color: #0f1111;
+    background-color: #febd69;
+    font-size: 1.2rem;
+}
+
+.nav-search:hover {
+    border: 2px solid orange;
+}
+
+
+/* box 4 */ 
+.nav-signin {
+    padding: 8px;
+}
+
+
+.sign-in {
+    font-size: 0.7rem;
+}
+
+.nav-list {
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+
+
+/* box 5 */ 
+.nav-returns {
+    padding: 8px;
+}
+
+.return {
+    font-size: 0.7rem;
+}
+
+.return-order {
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+
+/* box 6 */
+.nav-cart {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem; /* Use rem for scalable padding */
+}
+
+.nav-cart-icon {
+    font-size: 1.8rem;
+}
+
+.cart-text {
+    margin-top: 10px; /* Reduced margin for better alignment */
+    font-size: 0.9rem; /* Adjust font size for better responsiveness */
+    font-weight: 700;
+}
+
+
+/* box 7 */
+.nav-mode {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem; /* Adjust padding for better responsiveness */
+}
+
+.mode-text {
+    font-size: 1rem;
+}
+
+.nav-mode-icon {
+    margin-left: 5px;
+    font-size: 1.2rem;
+}
+
+
+
+
+/* - - - - -  End of navbar  - - - - -  */
