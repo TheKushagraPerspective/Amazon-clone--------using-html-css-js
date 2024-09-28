@@ -321,6 +321,10 @@
     font-size: 0.85rem;
 }
 
+.foot-panel1:hover {
+    cursor: pointer;
+}
+
 
 .foot-panel2 {
     padding-top: 30px;
